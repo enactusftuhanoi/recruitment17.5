@@ -3,82 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enactus FTU Hanoi - Gen 17.5</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RECRUITMENT GEN 17.5</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
             background-color: #f4f4f4;
             color: #333;
         }
-        nav {
-            background: #2d2d2d;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #FFC72C;
-            font-weight: bold;
-        }
         .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             text-align: center;
-            padding: 50px;
-            background: #2d2d2d;
+            background: linear-gradient(to right, #FFC72C, #2d2d2d);
             color: white;
+            padding: 20px;
         }
-        .hero span {
-            color: #FFC72C;
+        .hero h1 {
+            font-size: 56px;
             font-weight: bold;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-top: 10px;
         }
         .cta-button {
-            display: inline-block;
+            margin-top: 20px;
             padding: 15px 30px;
             background: #FFC72C;
             color: #2d2d2d;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: 0.3s;
         }
         .cta-button:hover {
             background: #e0a800;
+            transform: scale(1.1);
         }
-        .about {
-            padding: 30px;
+        .content {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
             text-align: center;
+        }
+        .content h2 {
+            color: #2d2d2d;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .timeline {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .timeline-item {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .faq-item {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item h3 {
+            color: #2d2d2d;
+            font-size: 22px;
+        }
+        .faq-item p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">🏠 Trang Chủ</a></li>
-            <li><a href="register.html">📝 Đăng Ký</a></li>
-            <li><a href="interview.html">🎤 Phỏng Vấn</a></li>
-        </ul>
-    </nav>
-    
     <header class="hero">
-        <h1>Chào mừng đến với <span>Enactus FTU Hanoi</span></h1>
-        <p>Hãy cùng chúng tôi tạo nên những giá trị tích cực cho cộng đồng! 🌍</p>
-        <a href="register.html" class="cta-button">Tham Gia Ngay</a>
+        <h1>Enactus FTU Hanoi</h1>
+        <p>Cùng nhau tạo ra tác động tích cực! 🚀</p>
+        <a href="register.html" class="cta-button">Đăng Ký Ngay</a>
     </header>
     
-    <section class="about">
-        <h2>📌 Về Enactus</h2>
-        <p>Enactus là một tổ chức quốc tế, nơi sinh viên sử dụng kỹ năng kinh doanh để giải quyết vấn đề xã hội.</p>
+    <section class="content">
+        <h2>Về Enactus</h2>
+        <p>Enactus là tổ chức sinh viên toàn cầu, nơi các bạn trẻ sử dụng kinh doanh để giải quyết các vấn đề xã hội.</p>
+    </section>
+    
+    <section class="timeline">
+        <h2>Lộ trình tuyển thành viên</h2>
+        <div class="timeline-item">
+            <h3>Vòng 1: Đăng ký (1-10/03)</h3>
+            <p>Ứng viên điền đơn đăng ký trực tuyến và gửi thông tin cá nhân.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Vòng 2: Phỏng vấn (15-20/03)</h3>
+            <p>Ứng viên sẽ có buổi phỏng vấn để đánh giá kỹ năng và sự phù hợp.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Vòng 3: Onboarding (25/03)</h3>
+            <p>Các thành viên chính thức tham gia buổi chào đón và định hướng.</p>
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="faq-item">
+            <h3>Ai có thể tham gia Enactus?</h3>
+            <p>Mọi sinh viên đều có thể đăng ký tham gia Enactus, không phân biệt ngành học.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Enactus có yêu cầu kinh nghiệm không?</h3>
+            <p>Không cần kinh nghiệm, chúng tôi sẽ đào tạo bạn từ đầu!</p>
+        </div>
     </section>
 </body>
 </html>
