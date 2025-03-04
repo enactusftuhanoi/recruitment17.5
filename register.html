@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Enactus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng Ký Thành Viên</h1>
+        <form id="registerForm">
+            <h2>PHẦN I - THÔNG TIN CÁ NHÂN</h2>
+            <input type="text" id="name" placeholder="Họ và Tên" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="date" id="dob" required>
+            <input type="tel" id="phone" placeholder="Số điện thoại" required>
+            <select id="gender" required>
+                <option value="">Giới tính</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select>
+            <input type="text" id="faculty" placeholder="Khoa - Khóa - Ngành" required>
+            <input type="url" id="facebook" placeholder="Link Facebook" required>
+            <input type="text" id="nickname" placeholder="Nickname">
+            
+            <h2>PHẦN II - CÂU HỎI CHUNG</h2>
+            <select id="department" required>
+                <option value="">Bạn đăng ký ban nào?</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Tài Chính">Tài Chính</option>
+                <option value="Nhân Sự">Nhân Sự</option>
+            </select>
+            
+            <h2>PHẦN III - CÂU HỎI RIÊNG THEO BAN</h2>
+            <textarea id="specificQuestion" placeholder="Trả lời câu hỏi riêng theo ban của bạn" required></textarea>
+            
+            <button type="submit">Gửi Đăng Ký</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
